@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PromptsList :prompts="prompts"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { PROMPTS_API_LIST_PROMPTS_URL } from './settings';
+import PromptsList from './components/PromptsList.vue'
+
+const axios = require('axios');
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    PromptsList
+  },
+  data() {
+    return {
+      prompts: []
+    }
+  },
+  created(){
+    axios
+      .get(PROMPTS_API_LIST_PROMPTS_URL)
+      .then(response => (this.prompts = response.data));
+  },
+  methods: {}
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
