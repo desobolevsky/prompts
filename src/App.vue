@@ -1,5 +1,6 @@
 <template>
-  <PromptsList :prompts="prompts"/>
+  <a>Selected Prompt Id: {{ selectedPromptId }}</a>
+  <PromptsList :prompts="prompts" :selectedPromptId="selectedPromptId" @selectPrompt="selectPrompt"/>
 </template>
 
 <script>
@@ -14,14 +15,23 @@ export default {
   },
   data() {
     return {
-      prompts: []
+      prompts: [],
+      selectedPromptId: null,
     }
   },
   created(){
-    axios
-      .get(PROMPTS_API_LIST_PROMPTS_URL)
-      .then(response => (this.prompts = response.data));
+    axios.get(PROMPTS_API_LIST_PROMPTS_URL)
+      .then(response => {
+        (this.prompts = response.data)
+      })
+      .catch(error => {
+        console.error(error)
+      });
   },
-  methods: {}
+  methods: {
+    selectPrompt(promptId){
+      this.selectedPromptId = promptId;
+    }
+  }
 }
 </script>

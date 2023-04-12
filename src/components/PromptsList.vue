@@ -4,6 +4,8 @@
       :key="prompt.id"
       :title="prompt.title"
       :id="prompt.id"
+      :isSelected="selectedPromptId === prompt.id"
+      @click="selectPrompt(prompt.id)"
        />
 </template>
 
@@ -14,6 +16,11 @@ export default {
     components: {
         PromptListItem
     },
-    props: ['prompts']
+    props: ['prompts', 'selectedPromptId'],
+    methods: {
+        selectPrompt(promptId){
+            this.$emit('selectPrompt', promptId);
+        }
+    }
 }
 </script>
