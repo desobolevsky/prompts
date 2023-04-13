@@ -11,12 +11,30 @@
 
 <script>
 import PromptListItem from './PromptListItem.vue';
+import { PROMPTS_API_LIST_PROMPTS_URL } from '../settings';
+
+const axios = require('axios');
 
 export default {
+    
+    data(){
+        return {
+            prompts: [],
+        }
+    },
     components: {
         PromptListItem
     },
-    props: ['prompts', 'selectedPromptId'],
+    props: ['selectedPromptId'],
+    created(){
+        axios.get(PROMPTS_API_LIST_PROMPTS_URL)
+          .then(response => {
+              (this.prompts = response.data)
+          })
+          .catch(error => {
+              console.error(error)
+          });
+    },
     methods: {
         selectPrompt(promptId){
             this.$emit('selectPrompt', promptId);
