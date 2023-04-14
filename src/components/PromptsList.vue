@@ -1,12 +1,14 @@
 <template>
-    <PromptListItem
-      v-for="prompt in prompts"
-      :key="prompt.id"
-      :title="prompt.title"
-      :id="prompt.id"
-      :isSelected="selectedPromptId === prompt.id"
-      @click="selectPrompt(prompt.id)"
-       />
+    <div class="list-box">
+        <PromptListItem
+            v-for="prompt in prompts"
+            :key="prompt.id"
+            :title="prompt.title"
+            :id="prompt.id"
+            :isSelected="selectedPromptId === prompt.id"
+            @click="selectPrompt(prompt.id)"
+        />
+    </div>
 </template>
 
 <script>
