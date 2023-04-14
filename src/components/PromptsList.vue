@@ -19,7 +19,6 @@ import { PROMPTS_API_LIST_PROMPTS_URL } from '../settings';
 const axios = require('axios');
 
 export default {
-    
     data(){
         return {
             prompts: null,
