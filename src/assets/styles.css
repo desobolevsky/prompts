@@ -4,9 +4,9 @@
     height: 100vh;
 }
 
-.description-box {
-    flex: 1;
-    background-color: rgb(0, 255, 136);
+.list-box {
+    flex: 1.5;
+    background-color: blue;
 }
 
 .playground-box {
@@ -14,7 +14,7 @@
     background-color: red;
 }
 
-.list-box {
-    flex: 1;
-    background-color: blue;
+.description-box {
+    flex: 1.5;
+    background-color: rgb(0, 255, 136);
 }
