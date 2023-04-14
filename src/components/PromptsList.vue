@@ -1,13 +1,16 @@
 <template>
     <div class="list-box">
-        <PromptListItem
-            v-for="prompt in prompts"
-            :key="prompt.id"
-            :title="prompt.title"
-            :id="prompt.id"
-            :isSelected="selectedPromptId === prompt.id"
-            @click="selectPrompt(prompt.id)"
-        />
+        <div v-if="prompts">
+            <PromptListItem
+                v-for="prompt in prompts"
+                :key="prompt.id"
+                :title="prompt.title"
+                :id="prompt.id"
+                :isSelected="selectedPromptId === prompt.id"
+                @click="selectPrompt(prompt.id)"
+            />
+        </div>
+        <p v-else>Loading</p>
     </div>
 </template>
 
@@ -21,7 +24,7 @@ export default {
     
     data(){
         return {
-            prompts: [],
+            prompts: null,
         }
     },
     components: {
