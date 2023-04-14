@@ -1,11 +1,9 @@
 <template>
-    <div class="description-box">
-      <div v-if="prompt">
-        <h2>{{ prompt.title }}</h2>
-        <p>{{ prompt.description }}</p>
-      </div>
-      <p v-else>Loading</p>
-    </div>
+  <div v-if="prompt">
+    <h2>{{ prompt.title }}</h2>
+    <p>{{ prompt.description }}</p>
+  </div>
+  <p v-else>Loading</p>
   </template>
 
 <script>

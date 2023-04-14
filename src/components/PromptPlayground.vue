@@ -1,9 +1,7 @@
-<template>
-    <div class="playground-box">
-      <p v-if="prompt">Content: {{ prompt.content }}</p>
-      <p v-else>Loading</p>
-    </div>
-  </template>
+<template>  
+  <p v-if="prompt">Content: {{ prompt.content }}</p>
+  <p v-else>Loading</p>
+</template>
 
 <script>
 export default {

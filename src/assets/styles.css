@@ -4,17 +4,17 @@
     height: 100vh;
 }
 
-.list-box {
+.left-part {
     flex: 1.5;
     background-color: blue;
 }
 
-.playground-box {
+.central-part {
     flex: 4;
     background-color: red;
 }
 
-.description-box {
+.right-part {
     flex: 1.5;
     background-color: rgb(0, 255, 136);
 }

@@ -1,9 +1,15 @@
 <template>
   <a>Selected Prompt Id: {{ selectedPromptId }}</a>
   <div class="container">
-    <PromptsList :selectedPromptId="selectedPromptId" @selectPrompt="selectPrompt" />
-    <PromptPlayground :prompt="prompt" />
-    <PromptDescripton :prompt="prompt" />
+    <div class="left-part">
+      <PromptsList :selectedPromptId="selectedPromptId" @selectPrompt="selectPrompt" />
+    </div>
+    <div class="central-part">
+      <PromptPlayground :prompt="prompt" />
+    </div>
+    <div class="right-part">
+      <PromptDescripton :prompt="prompt" />
+    </div>
   </div>
 </template>
 
