@@ -18,7 +18,7 @@ export default {
   props: ['prompt'],
   methods: {
     copyPromptContentToClipboard() {
-      const promptContent = this.prompt.content;
+      const promptContent = this.prompt.template;
       navigator.clipboard.writeText(promptContent).then(() => {
         this.buttonText = COPIED_BUTTON_TEXT;
         setTimeout(() => {
