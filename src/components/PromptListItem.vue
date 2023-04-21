@@ -7,9 +7,3 @@ export default {
     props: ['title', 'id', 'isSelected']
 }
 </script>
-
-<style>
-li.selected {
-    font-weight: bold;
-}
-</style>

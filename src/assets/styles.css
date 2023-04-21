@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+
+  overflow: hidden;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -6,15 +15,66 @@
 
 .left-part {
     flex: 1.5;
-    background-color: blue;
+    flex-direction: column;
+
+    display: flex;
+    height: 100vh;
+
+    overflow: hidden;
+    overflow-y: auto;
+
+    background-color: rgb(32, 33, 35);
+    color: rgb(231, 231, 238);
+}
+
+.left-part li {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 12px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.left-part li.selected {
+    background-color: rgb(52, 53, 65);
+}
+
+.left-part li.selected:hover {
+    background-color: rgb(52, 53, 65);
+}
+
+.left-part li:hover {
+    background-color: rgb(40, 40, 50);
+}
+
+/* Define the animation */
+@keyframes autoscroll {
+    from {
+        /* Start scrolling from the left */
+        transform: translateX(0%);
+    }
+    to {
+        /* Scroll to the right */
+        transform: translateX(-100%);
+    }
 }
 
 .central-part {
     flex: 4;
-    background-color: red;
+    background-color: rgb(247, 248, 248);
 }
 
 .right-part {
     flex: 1.5;
-    background-color: rgb(0, 255, 136);
+
+    background-color: rgb(32, 33, 35);
+    color: rgb(231, 231, 238);
+
+    overflow: hidden;
+    overflow-wrap: break-word;
 }
