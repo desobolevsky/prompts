@@ -1,5 +1,5 @@
 <template>
-    <button :disabled="!prompt" @click="copyPromptContentToClipboard">
+    <button :disabled="!prompt" @click="copyPromptContentToClipboard" class="copy-prompt-button">
         <p>{{ buttonText }}</p>
     </button>
 </template>

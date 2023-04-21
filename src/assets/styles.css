@@ -52,18 +52,6 @@ body {
     background-color: rgb(40, 40, 50);
 }
 
-/* Define the animation */
-@keyframes autoscroll {
-    from {
-        /* Start scrolling from the left */
-        transform: translateX(0%);
-    }
-    to {
-        /* Scroll to the right */
-        transform: translateX(-100%);
-    }
-}
-
 .central-part {
     flex: 4;
     background-color: rgb(247, 248, 248);
@@ -71,10 +59,21 @@ body {
 
 .right-part {
     flex: 1.5;
+    flex-direction: column;
+
+    display: flex;
 
     background-color: rgb(32, 33, 35);
     color: rgb(231, 231, 238);
 
     overflow: hidden;
     overflow-wrap: break-word;
+}
+
+.right-part .description-box {
+    margin: 8px;
+}
+
+.right-part .copy-prompt-button {    
+    margin: 8px;
 }

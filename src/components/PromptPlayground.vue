@@ -1,5 +1,6 @@
 <template>  
   <div v-if="prompt">
+    <h1>{{ prompt.title }}</h1>
     <h3>{{ prompt.template }}</h3>
     <div v-for="(example, index) in prompt.examples" :key="index">
       <p>User: {{ example.user }}</p>
