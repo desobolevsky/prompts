@@ -1,5 +1,6 @@
 <template>
   <a>Selected Prompt Id: {{ selectedPromptId }}</a>
+  <AuthButton/>
   <div class="container">
     <div class="left-part">
       <PromptsList :selectedPromptId="selectedPromptId" @selectPrompt="selectPrompt" />
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import AuthButton from './components/AuthButton.vue';
 import CopyPromptButton from './components/CopyPromptButton.vue';
 import PromptsList from './components/PromptsList.vue';
 import PromptDescripton from './components/PromptDescripton.vue';
@@ -25,6 +27,7 @@ const axios = require('axios');
 
 export default {
   components: {
+    AuthButton,
     CopyPromptButton,
     PromptsList,
     PromptDescripton,
