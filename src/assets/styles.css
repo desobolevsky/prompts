@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 body {
-  font-family: 'Noto Sans', sans-serif;
-  margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .container {
@@ -57,6 +57,103 @@ body {
     background-color: rgb(247, 248, 248);
 }
 
+.central-part .playground-box {
+    flex-direction: column;
+    display: flex;
+
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.central-part .playground-box .title-box .title {
+    margin: 0;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+
+    text-align: center;
+}
+
+.central-part .playground-box .template-box {
+    border-top: 2px solid black;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+
+    background-color: #d3d3d3;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.central-part .playground-box .template-box .template-wrapper {
+    margin-left: 1em;
+}
+
+.central-part .playground-box .template-box .template-wrapper .template-hint {
+    font-size: small;
+    font-style: italic;
+    margin: 0;
+}
+
+.central-part .playground-box .template-box .template-wrapper .template-text {
+    margin-top: 0em;
+    margin-bottom: 0.75em;
+}
+
+.central-part .playground-box .examples-box {
+    border-top: 2px solid black;
+    margin-left: -1em;  
+    margin-right: -1em;
+}
+
+.central-part .playground-box .examples-box .example-box {
+    border-bottom: 2px solid black;
+    padding: 1em;
+}
+
+.central-part .playground-box .examples-box .example-box .example-content {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-box-user {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.message-box-chatgpt {
+    display: flex;
+}
+
+.message-part {
+    width: 2.5em;
+    text-align: center;
+
+    align-items: flex-start;
+}
+
+.message-part img {
+    margin-top: 1em;
+    width: 2em;
+}
+
+.message-text {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: calc(100% - 60px);
+    text-align: justify;
+}
+
+.message-text p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 .right-part {
     flex: 1.5;
     flex-direction: column;
@@ -74,6 +171,6 @@ body {
     margin: 8px;
 }
 
-.right-part .copy-prompt-button {    
+.right-part .copy-prompt-button {
     margin: 8px;
 }
