@@ -1,0 +1,25 @@
+.central-part .playground-box .template-box {
+    border-top: 2px solid black;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+
+    background-color: #d3d3d3;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.central-part .playground-box .template-box .template-wrapper {
+    margin-left: 1em;
+}
+
+.central-part .playground-box .template-box .template-wrapper .template-hint {
+    font-size: small;
+    font-style: italic;
+    margin: 0;
+}
+
+.central-part .playground-box .template-box .template-wrapper .template-text {
+    margin-top: 0em;
+    margin-bottom: 0.75em;
+}

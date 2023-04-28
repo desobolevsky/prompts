@@ -1,0 +1,12 @@
+.central-part {
+    flex: 4;
+    background-color: rgb(247, 248, 248);
+}
+
+.central-part .playground-box {
+    flex-direction: column;
+    display: flex;
+
+    margin-left: 1em;
+    margin-right: 1em;
+}

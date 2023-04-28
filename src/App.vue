@@ -56,5 +56,12 @@ export default {
 </script>
 
 <style>
-@import "@/assets/styles.css";
+@import "@/assets/styles/base.css";
+@import "@/assets/styles/parts/central/base.css";
+@import "@/assets/styles/parts/central/example.css";
+@import "@/assets/styles/parts/central/message.css";
+@import "@/assets/styles/parts/central/template.css";
+@import "@/assets/styles/parts/central/title.css";
+@import "@/assets/styles/parts/left/base.css";
+@import "@/assets/styles/parts/right/base.css";
 </style>

@@ -1,0 +1,16 @@
+.examples-box {
+    border-top: 2px solid black;
+    margin-left: -1em;  
+    margin-right: -1em;
+}
+
+.example-box-wrapper {
+    border-bottom: 2px solid black;
+    padding: 1em;
+}
+
+.example-box {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+}

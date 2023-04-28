@@ -1,19 +1,24 @@
 <template>
-<div class="example-content">
-    <div class="message-box-user">
-      <div class="message-part">
-        <img :src="require('@/assets/user-icon.png')" alt="User avatar">
+  <div class="example-box-wrapper">
+    <div class="example-box">
+
+      <div class="user-message-box">
+        <div class="message-avatar">
+          <img :src="require('@/assets/images/user-icon.png')" alt="User avatar">
+        </div>
+        <div class="message-text">
+          <p>{{ example.user }}</p>
+        </div>
       </div>
-      <div class="message-part message-text">
-        <p>{{ example.user }}</p>
-      </div>
-    </div>
-    <div class="message-box-chatgpt">
-      <div class="message-part">
-        <img :src="require('@/assets/chatgpt-icon.svg')" alt="ChatGPT avatar">
-      </div>
-      <div class="message-part message-text">
-        <p>{{ example.system }}</p>
+
+      <div class="chatgpt-message-box">
+        <div class="message-avatar">
+          <img :src="require('@/assets/images/chatgpt-icon.svg')" alt="ChatGPT avatar">
+        </div>
+        <div class="message-text">
+          <p>{{ example.system }}</p>
+        </div>
+      
       </div>
     </div>
   </div>

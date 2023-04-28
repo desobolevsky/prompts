@@ -1,0 +1,38 @@
+.user-message-box {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.chatgpt-message-box {
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.message-avatar {
+    width: 2.5em;
+    text-align: center;
+
+    align-items: flex-start;
+}
+
+.message-avatar img {
+    margin-top: 1em;
+    width: 2em;
+}
+
+.message-text {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: calc(100% - 60px);
+    text-align: justify;
+}
+
+.message-text p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
