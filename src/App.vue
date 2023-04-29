@@ -9,13 +9,11 @@
     </div>
     <div class="right-part">
       <PromptDescripton :prompt="prompt" />
-      <CopyPromptButton :prompt="prompt" />
     </div>
   </div>
 </template>
 
 <script>
-import CopyPromptButton from './components/CopyPromptButton.vue';
 import PromptsList from './components/PromptsList.vue';
 import PromptDescripton from './components/PromptDescripton.vue';
 import PromptPlayground from './components/PromptPlayground.vue';
@@ -25,7 +23,6 @@ const axios = require('axios');
 
 export default {
   components: {
-    CopyPromptButton,
     PromptsList,
     PromptDescripton,
     PromptPlayground

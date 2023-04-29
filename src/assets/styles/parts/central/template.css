@@ -1,4 +1,4 @@
-.central-part .playground-box .template-box {
+.template-box {
     border-top: 2px solid black;
     margin-top: 0.25em;
     margin-bottom: 1em;
@@ -9,17 +9,26 @@
     border-radius: 10px;
 }
 
-.central-part .playground-box .template-box .template-wrapper {
+.template-wrapper {
     margin-left: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 
-.central-part .playground-box .template-box .template-wrapper .template-hint {
+.template-hint {
     font-size: small;
     font-style: italic;
     margin: 0;
 }
 
-.central-part .playground-box .template-box .template-wrapper .template-text {
+.template-text {
     margin-top: 0em;
     margin-bottom: 0.75em;
 }
+
+.copy-prompt-button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+

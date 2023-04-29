@@ -5,7 +5,7 @@
     </div>
 
     <div class="template-box">
-      <PromptTemplate :promptTemplate="prompt.template"/>
+      <PromptTemplate :prompt="prompt"/>
     </div>
 
     <div class="examples-box">
