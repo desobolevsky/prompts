@@ -31,7 +31,9 @@ export default {
     created(){
         axios.get(PROMPTS_API_LIST_PROMPTS_URL)
           .then(response => {
-              (this.prompts = response.data)
+              this.prompts = response.data;
+              const defaultSelectedPromptId = this.getDefaultSelectedPromptId();
+              this.selectPrompt(defaultSelectedPromptId);
           })
           .catch(error => {
               console.error(error)
@@ -40,6 +42,15 @@ export default {
     methods: {
         selectPrompt(promptId){
             this.$emit('selectPrompt', promptId);
+            localStorage.setItem('lastSelectedPromptId', promptId);
+        },
+        getDefaultSelectedPromptId(){
+            const lastSelectedPromptId = parseInt(localStorage.getItem('lastSelectedPromptId'));
+            const promptsIds = this.prompts.map(prompt => prompt.id);
+            if (lastSelectedPromptId !== null || promptsIds.includes(lastSelectedPromptId)){
+                return lastSelectedPromptId;
+            }
+            return this.prompts[0].id ;
         }
     }
 }
