@@ -1,5 +1,4 @@
 <template>
-  <a>Selected Prompt Id: {{ selectedPromptId }}</a>
   <div class="container">
     <div class="left-part">
       <PromptsList :selectedPromptId="selectedPromptId" @selectPrompt="selectPrompt" />

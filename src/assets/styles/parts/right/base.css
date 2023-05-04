@@ -15,6 +15,10 @@
     margin: 8px;
 }
 
+.description-title {
+    margin-top: 0px;
+}
+
 .copy-prompt-button {
     margin: 8px;
 }
