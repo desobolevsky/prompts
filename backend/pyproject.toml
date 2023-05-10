@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "prompts-backend"
+version = "0.1.0"
+description = "Backend for prompts"
+authors = ["Dzianis Sabaleuski <desobolevsky@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prompts_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+alembic = "^1.10.4"
+python-dotenv = "^1.0.0"
+sqlalchemy-json = "^0.5.0"
+sqlalchemy = "^2.0.12"
+psycopg2-binary = "^2.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
