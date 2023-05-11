@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "Backend for prompts"
 authors = ["Dzianis Sabaleuski <desobolevsky@gmail.com>"]
 readme = "README.md"
-packages = [{include = "prompts_backend"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -16,6 +15,9 @@ sqlalchemy-json = "^0.5.0"
 sqlalchemy = "^2.0.12"
 psycopg2-binary = "^2.9.6"
 
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
