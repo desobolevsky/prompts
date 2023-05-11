@@ -7,7 +7,7 @@
           <img :src="require('@/assets/images/user-icon.png')" alt="User avatar">
         </div>
         <div class="message-text">
-          <p>{{ example.user }}</p>
+          <p>{{ example.user_message }}</p>
         </div>
       </div>
 
@@ -16,7 +16,7 @@
           <img :src="require('@/assets/images/chatgpt-icon.svg')" alt="ChatGPT avatar">
         </div>
         <div class="message-text">
-          <p>{{ example.system }}</p>
+          <p>{{ example.system_message }}</p>
         </div>
       
       </div>
