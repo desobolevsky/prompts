@@ -47,7 +47,7 @@ export default {
         getDefaultSelectedPromptId(){
             const lastSelectedPromptId = parseInt(localStorage.getItem('lastSelectedPromptId'));
             const promptsIds = this.prompts.map(prompt => prompt.id);
-            if (lastSelectedPromptId !== null || promptsIds.includes(lastSelectedPromptId)){
+            if (!isNaN(lastSelectedPromptId) || promptsIds.includes(lastSelectedPromptId)){
                 return lastSelectedPromptId;
             }
             return this.prompts[0].id ;
