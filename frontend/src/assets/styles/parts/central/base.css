@@ -1,6 +1,9 @@
 .central-part {
     flex: 4;
     background-color: rgb(247, 248, 248);
+
+    overflow-y: auto;
+    height: 100vh;
 }
 
 .central-part .playground-box {
