@@ -1,6 +1,6 @@
 <template>
     <div class="template-wrapper">
-        <div>
+        <div class="template">
           <span class="template-hint">template</span>
           <h2 class="template-text">{{ prompt.template }}</h2>
         </div>

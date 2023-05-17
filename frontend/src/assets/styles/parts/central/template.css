@@ -15,6 +15,10 @@
     justify-content: space-between;
 }
 
+.template {
+    flex: 9;
+}
+
 .template-hint {
     font-size: small;
     font-style: italic;
@@ -27,6 +31,7 @@
 }
 
 .copy-prompt-button {
+    flex: 0.8;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-right: 1em;
