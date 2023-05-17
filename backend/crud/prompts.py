@@ -10,7 +10,7 @@ class CRUDPrompt:
         return db.query(self.model).filter(self.model.id == id).first()
 
     def get_multi(self, db: Session) -> list[Prompt]:
-        return db.query(self.model).all()
+        return db.query(self.model).order_by(self.model.id).all()
 
 
 crud_prompt = CRUDPrompt()
