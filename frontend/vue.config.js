@@ -6,5 +6,13 @@ module.exports = defineConfig({
     plugins: [
       new NodePolyfillPlugin()
     ]
-  }
+  },
+  chainWebpack: config => {
+    config
+        .plugin('html')
+        .tap(args => {
+            args[0].title = "Prompts Arch";
+            return args;
+        })
+}
 })
