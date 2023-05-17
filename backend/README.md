@@ -48,7 +48,7 @@ docker run -tdi -p 8000:8000 prompts-backend:latest
 ```
 The app will be accessible at http://localhost:8000.
 
-## ## [Env variables description](#env-variables-description):
+## [Env variables description](#env-variables-description):
 **POSTGRES_SERVER** - address of the postgres server  
 **POSTGRES_DB** - db name in postgres server  
 **POSTGRES_USER** - postgres username  
