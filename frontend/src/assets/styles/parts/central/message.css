@@ -30,6 +30,7 @@
     border-radius: 5px;
     width: calc(100% - 60px);
     text-align: justify;
+    white-space: break-spaces;
 }
 
 .message-text p {
