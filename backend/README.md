@@ -1,5 +1,5 @@
 # Prompts backend
-This is a frontend source code for *prompts* app.
+This is a backend source code for *prompts* app.
 
 ## Setup and run
 1. Install the dependencies:
